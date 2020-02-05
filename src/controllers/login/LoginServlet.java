@@ -96,7 +96,7 @@ public class LoginServlet extends HttpServlet {
             request.getSession().setAttribute("login_employee",e);
 
             request.getSession().setAttribute("flush","ログインしました。");
-            response.sendRedirect(request.getContextPath() + "/logout");
+            response.sendRedirect(request.getContextPath() + "/");
         }
     }
 
