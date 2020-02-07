@@ -18,7 +18,7 @@
                     </tr>
                     <tr>
                         <th>内容</th>
-                        <td>"WebContent/WEB-INF/views/reports"
+                        <td>
                         <pre><c:out value="${report.content}" /></pre>
                         </td>
                     </tr>
