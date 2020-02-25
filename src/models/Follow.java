@@ -32,17 +32,6 @@ private Employee user_id;
 @JoinColumn(name="follower_id",nullable=false)
 private Employee follower_id;
 
-@Column(name="follow_flag")
-private Integer follow_flag;
-
-public Integer getFollow_flag() {
-    return follow_flag;
-}
-
-public void setFollow_flag(Integer follow_flag) {
-    this.follow_flag = follow_flag;
-}
-
 public Integer getId() {
     return id;
 }
