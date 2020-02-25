@@ -40,7 +40,7 @@ public class ReportsUpdateServlet extends HttpServlet {
         if(_token != null && _token.equals(request.getSession().getId())){
             EntityManager em=DBUtil.createEntityManager();
 
-            Report r=em.find(Report.class, (Integer)(request.getSession().getAttribute("report_id")));
+            Report r=em.find(Report.class, (Integer)request.getSession().getAttribute("report_id"));
 
             r.setReport_date(Date.valueOf(request.getParameter("report_date")));
             r.setTitle(request.getParameter("title"));

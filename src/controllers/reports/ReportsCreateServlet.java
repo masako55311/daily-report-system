@@ -71,7 +71,7 @@ public class ReportsCreateServlet extends HttpServlet {
                 rd.forward(request, response);
             }else {
                 em.getTransaction().begin();
-                em.persist(r);
+                em.persist(r); 			//データベースにReportの新規登録
                 em.getTransaction().commit();
                 em.close();
                 request.getSession().setAttribute("flush","登録が完了しました。");
